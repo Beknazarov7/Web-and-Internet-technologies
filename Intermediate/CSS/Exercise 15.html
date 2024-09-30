@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rotate on Hover</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            padding: 20px;
+            text-align: center;
+        }
+        .rotate-on-hover {
+            display: inline-block;
+            width: 150px;
+            height: 150px;
+            background-color: green;
+            transition: transform 0.5s;
+        }
+        .rotate-on-hover:hover {
+            transform: rotate(60deg);
+        }
+        .home-link {
+            display: block;
+            margin-top: 20px;
+            text-decoration: none;
+            color: #76c7c0;
+        }
+    </style>
+</head>
+<body>
+<h1>Rotate on Hover</h1>
+<div class="rotate-on-hover"></div>
+
+<a class="home-link" href="/index.html">Home</a>
+</body>
+</html>

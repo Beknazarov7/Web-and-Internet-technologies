@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Style Form</title>
+    <style>
+        form {
+            display: flex;
+            flex-direction: column;
+            width: 300px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f4f4f4;
+            border-radius: 10px;
+        }
+
+        input[type="text"] {
+            padding: 10px;
+            border: 2px solid #ccc;
+            border-radius: 25px;
+            font-size: 16px;
+            margin-bottom: 15px;
+            outline: none;
+        }
+
+        input[type="text"]:focus {
+            border-color: #66afe9;
+            background-color: #e0f7fa;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 25px;
+            font-size: 16px;
+        }
+
+    </style>
+</head>
+<body>
+    <form>
+        <label>Name: </label>
+        <input type="text">
+
+        <label>Surname: </label>
+        <input type="text">
+
+        <button>Submit</button>
+    </form>
+    <a href="/index.html">Home</a>
+</body>
+</html>

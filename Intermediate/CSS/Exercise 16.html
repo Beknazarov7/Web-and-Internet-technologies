@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Progress Bar</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        .progress-container {
+            width: 100%;
+            background-color: #e0e0e0;
+            border-radius: 5px;
+            overflow: hidden;
+            height: 30px;
+        }
+
+        .progress-bar {
+            width: 0;
+            height: 100%;
+            background-color: #4CAF50;
+            transition: width 0.5s ease;
+        }
+
+        .progress-label {
+            text-align: center;
+            color: white;
+            line-height: 30px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+<h2>Progress Bar Example</h2>
+<div class="progress-container">
+    <div class="progress-bar" id="myBar">
+        <span class="progress-label" id="progressLabel">0%</span>
+    </div>
+</div>
+<br>
+<button onclick="move()">Start Progress</button>
+
+<script>
+    function move() {
+        let bar = document.getElementById("myBar");
+        let label = document.getElementById("progressLabel");
+        let width = 0;
+
+        let interval = setInterval(function() {
+            if (width >= 100) {
+                clearInterval(interval);
+            } else {
+                width++;
+                bar.style.width = width + '%';
+                label.innerText = width + '%';
+            }
+        }, 50);
+    }
+</script>
+<a href="/index.html">Home</a>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Typography</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            line-height: 1.2;
+            color: #333;
+        }
+
+        p {
+            font-size: 1em;
+            line-height: 1.5;
+            color: #555;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2em;
+                line-height: 1.1;
+            }
+            p {
+                font-size: 0.9em;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1.5em;
+                line-height: 1.1;
+            }
+            p {
+                font-size: 0.8em;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<h1>Responsive Typography Example</h1>
+<p>This is a paragraph that adjusts its font size and line height based on the screen size. Resize the browser window to see the changes in action.</p>
+<a href="/index.html">Home</a>
+</body>
+</html>

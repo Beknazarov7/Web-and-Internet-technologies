@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sticky Sidebar</title>
+    <style>
+        body {
+            display: flex;
+            margin: 0;
+        }
+
+        .content {
+            flex: 1;
+            padding: 20px;
+            height: 2000px;
+            background-color: #f4f4f4;
+        }
+
+        .sidebar {
+            width: 200px;
+            background-color: #3498db;
+            color: white;
+            padding: 20px;
+            position: sticky;
+            top: 0;
+            height: 100vh;
+        }
+    </style>
+</head>
+<body>
+
+<div class="sidebar">
+    <h2>Sidebar</h2>
+    <p>This sidebar will remain fixed.</p>
+</div>
+
+<div class="content">
+    <h1>Main Content</h1>
+    <p>Scroll down to see the effect of the sidebar.</p>
+</div>
+<a href="/index.html">Home</a>
+</body>
+</html>

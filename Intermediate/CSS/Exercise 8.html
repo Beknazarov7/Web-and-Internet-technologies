@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Image Gallery</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            background-color: #f0f0f0;
+        }
+
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .gallery img {
+            width: calc(33.333% - 10px);
+            border-radius: 5px;
+        }
+
+        a {
+            margin-top: 20px;
+            display: block;
+            text-decoration: none;
+            color: #007bff;
+        }
+    </style>
+</head>
+<body>
+<h1>Image Gallery</h1>
+<div class="gallery">
+    <img src="/Media/liverpool.jpeg" alt="Image 1">
+    <img src="/Media/liverpool.jpeg" alt="Image 2">
+    <img src="/Media/liverpool.jpeg" alt="Image 3">
+    <img src="/Media/liverpool.jpeg" alt="Image 4">
+    <img src="https://via.placeholder.com/300" alt="Image 5">
+    <img src="https://via.placeholder.com/300" alt="Image 6">
+</div>
+
+<a href="/index.html">Home</a>
+</body>
+</html>

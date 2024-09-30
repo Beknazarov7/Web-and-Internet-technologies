@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Use CSS Variables</title>
+    <style>
+        :root {
+            --primary-color: lightblue;
+            --secondary-color: yellow;
+        }
+
+        body {
+            background-color: var(--primary-color);
+            color: white;
+        }
+
+        .home {
+            margin-top: 50px;
+            color: #76c7c0;
+            text-decoration: None;
+        }
+    </style>
+</head>
+<body>
+    <h1>Usage of CSS Variables</h1>
+
+    <div class="tooltip"> Hover over me
+        <span class="tooltiptext">Tooltip text</span>
+    </div>
+    <a href="/index.html">Home</a>
+</body>
+</html>

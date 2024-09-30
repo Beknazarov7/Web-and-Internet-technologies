@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Custom Checkbox</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+      padding: 20px;
+    }
+
+    .custom-checkbox {
+      display: flex;
+      align-items: center;
+    }
+
+    input[type="checkbox"] {
+      display: none;
+    }
+
+    .checkbox-label {
+      position: relative;
+      cursor: pointer;
+      padding-left: 30px;
+      font-size: 1.2em;
+      user-select: none;
+    }
+
+    .checkbox-label:before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 20px;
+      height: 20px;
+      border: 2px solid #007bff;
+      background-color: white;
+      border-radius: 4px;
+    }
+
+    input[type="checkbox"]:checked + .checkbox-label:before {
+      background-color: #007bff;
+      border-color: #0056b3;
+    }
+
+    input[type="checkbox"]:checked + .checkbox-label:after {
+      content: '';
+      position: absolute;
+      left: 7px;
+      top: 10px;
+      width: 5px;
+      height: 10px;
+      border: solid white;
+      border-width: 0 2px 2px 0;
+      transform: rotate(45deg);
+    }
+  </style>
+</head>
+<body>
+
+<div class="custom-checkbox">
+  <input type="checkbox" id="customCheckbox">
+  <label class="checkbox-label" for="customCheckbox">Custom Checkbox</label>
+</div>
+<a href="/index.html">Home</a>
+</body>
+</html>

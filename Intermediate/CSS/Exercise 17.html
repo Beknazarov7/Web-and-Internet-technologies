@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Mask</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            padding: 20px;
+            text-align: center;
+        }
+        .mask-container {
+            width: 300px;
+            height: 200px;
+            position: relative;
+            overflow: hidden;
+            border-radius: 10px;
+            margin: 20px auto;
+        }
+        .mask-image {
+            width: 100%;
+            height: auto;
+            position: absolute;
+            top: 0;
+            left: 0;
+            clip-path: circle(50% at 50% 50%);
+        }
+        .home-link {
+            display: block;
+            margin-top: 20px;
+            text-decoration: none;
+            color: #76c7c0;
+        }
+    </style>
+</head>
+<body>
+<h1>CSS Mask</h1>
+<div class="mask-container">
+    <img src="/Media/liverpool.jpeg" alt="Masked" class="mask-image">
+</div>
+
+<a class="home-link" href="/index.html">Home</a>
+</body>
+</html>

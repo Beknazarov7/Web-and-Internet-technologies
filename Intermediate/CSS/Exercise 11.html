@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom List Item Style</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            background-color: #f0f0f0;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li::before {
+            content: "✔️";
+            margin-right: 10px;
+            color: #007bff;
+        }
+
+        a {
+            margin-top: 20px;
+            display: block;
+            text-decoration: none;
+            color: #007bff;
+        }
+    </style>
+</head>
+<body>
+<h1>Custom List</h1>
+<ul>
+    <li> One</li>
+    <li> Two</li>
+    <li> Three</li>
+</ul>
+
+<a href="/index.html">Home</a>
+</body>
+</html>
